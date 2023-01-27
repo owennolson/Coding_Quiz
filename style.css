@@ -36,6 +36,22 @@ main {
     columns: 1;
     flex-direction: column;
 }
+button {
+    width: 100%;
+    height: 5rem;
+    margin-top: 5rem;
+    border-radius: 0 0 1rem 1rem;
+    background-color: rgb(255, 145, 0);
+}
+button:hover {
+    background-color: rgb(224, 127, 0);
+    cursor:grab;
+}
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+}
 .startGame {
     align-items: center;
     justify-content: center;
@@ -46,25 +62,11 @@ main {
     margin: 2rem;
     box-shadow: .5rem .5rem 0 0 rgb(190, 86, 0);
 }
-.startGame h1 {
-    font-size: 2rem;
-    text-align: center;
-    margin: 1rem;
-}
 .startGame p {
     font-size: 1rem;
     text-align: center;
     margin: 1rem;
-
 }
-.startGame button {
-    width: 100%;
-    height: 5rem;
-    margin-top: 5rem;
-    border-radius: 0 0 1rem 1rem;
-    background-color: rgb(255, 145, 0);
-}
-
 .quizArea {
     align-items: center;
     justify-content: center;
@@ -75,23 +77,11 @@ main {
     margin: 2rem;
     box-shadow: .5rem .5rem 0 0 rgb(190, 86, 0);
 }
-.quizArea h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin: 1rem;
-}
 .quizArea ul {
     font-size: 1rem;
     text-align: left;
     margin: 1rem;
     list-style: none;
-}
-.quizArea button {
-    width: 100%;
-    height: 5rem;
-    margin-top: 5rem;
-    border-radius: 0 0 1rem 1rem;
-    background-color: rgb(255, 145, 0);
 }
 .postGame {
     align-items: center;
@@ -103,11 +93,6 @@ main {
     margin: 2rem;
     box-shadow: .5rem .5rem 0 0 rgb(190, 86, 0);
 }
-.postGame h2 {
-    font-size: 2rem;
-    margin: 1rem;
-
-}
 .postGame label {
     font-size: 1rem;
     text-align: center;
@@ -117,13 +102,6 @@ main {
     height: 2.5rem;
     width: 10rem;
     margin: 1rem;
-}
-.postGame button {
-    width: 100%;
-    height: 5rem;
-    margin-top: 5rem;
-    border-radius: 0 0 1rem 1rem;
-    background-color: rgb(255, 145, 0);
 }
 .leaderboard {
     align-items: center;
@@ -135,17 +113,10 @@ main {
     margin: 2rem;
     box-shadow: .5rem .5rem 0 0 rgb(190, 86, 0);
 }
-.leaderboard h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin: 1rem;
-}
-
 .leaderboard ol {
     height: auto;
     background-color: rgb(196, 180, 157);
     margin: 4rem;
     font-size: 1rem;
-
 }
 
