@@ -1,64 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" a href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" a href="./style.css" />
     <title>Coding Quiz</title>
-</head>
-<body>
-    <div class = header>
-        <nav><a href="#leaderboard">View High Scores</a></nav>
-        <p id="timer">Time:</p>
+  </head>
+  <body>
+    <div class="header">
+      <nav><a href="#leaderboard">View High Scores</a></nav>
+      <p id="timer">Time:</p>
     </div>
     <main>
-        <div class = startGame id = startGame>
-            <h2>Coding Quiz</h2>
-            <p>Answer all the questions CORECTLY before the time runs out!<br>
-                But for every WRONG answer 15 seconds will<br>
-                be removed from your total time!
-            </p>
-            <button>Start Game!</button>
-        </div>
-        <div class = quizArea id = quiz>
-            <h2 class = question id = question>Question text</h2>
-            <ul>
-                <li>
-                    <input type="radio" id="a" name="answer" class = "answer">
-                    <label for="a" id = "aAnswer">Answer</label>
-                </li>
-                <li>
-                    <input type="radio" id="b" name="answer" class = "answer">
-                    <label for="b" id="bAnswer">Answer</label>
-                </li>
-                <li>
-                    <input type="radio" id="c" name="answer" class = "answer">
-                    <label for="c" id="cAnswer">Answer</label>
-                </li>
-                <li>
-                    <input type="radio" id="d" name="answer" class = "answer">
-                    <label for="d" id="dAnswer">Answer</label>
-                </li>
-            </ul>
-            <button>Submit</button>
-        </div>
-        <div class = postGame id = postGame>
-            <h2 id = score>Score: </h2>
-            <form>
-                <label for="userName">Enter a Three Letter Name:</label><br>
-                <input type="text" placeholder="Name" name = "userName" id = "userName" />
-            </form>
-            <button>Submit</button>
-        </div>
-        <div class = leaderboard id = leaderboard>
-            <h2>Leader Board</h2>
-            <ol id =  "highScore">
-                <li>joe mama</li>
-            </ol>
-            <button>New Game</button>
-        </div>
+      <div class="startGame" id="startGameArea">
+        <h2>Coding Quiz</h2>
+        <p>
+          Answer all the questions CORECTLY before the time runs out!<br />
+          But for every WRONG answer 15 seconds will<br />
+          be removed from your total time!
+        </p>
+        <button id="startBtn">Start Game!</button>
+      </div>
+      <div class="quizArea displayNone" id="quizArea">
+        <h2 class="question" id="question">Question text</h2>
+        <ul>
+          <li>
+            <input type="radio" id="a" name="answer" class="answer" />
+            <label for="a" id="aAnswer">Answer</label>
+          </li>
+          <li>
+            <input type="radio" id="b" name="answer" class="answer" />
+            <label for="b" id="bAnswer">Answer</label>
+          </li>
+          <li>
+            <input type="radio" id="c" name="answer" class="answer" />
+            <label for="c" id="cAnswer">Answer</label>
+          </li>
+          <li>
+            <input type="radio" id="d" name="answer" class="answer" />
+            <label for="d" id="dAnswer">Answer</label>
+          </li>
+        </ul>
+        <button id="quizBtn">Submit</button>
+      </div>
+      <div class="postGame displayNone" id="postGame">
+        <h2 id="score">Score:</h2>
+        <form>
+          <label for="userName">Enter a Three Letter Name:</label><br />
+          <input type="text" placeholder="Name" name="userName" id="userName" />
+        </form>
+        <button id="scoreBtn">Submit</button>
+      </div>
+      <div class="leaderboard displayNone" id="leaderboard">
+        <h2>Leader Board</h2>
+        <ol id="highScore">
+          <li>joe mama</li>
+        </ol>
+        <button id="newGameBtn">New Game</button>
+      </div>
     </main>
-    
-</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>

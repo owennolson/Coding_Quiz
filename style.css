@@ -52,8 +52,10 @@ h2 {
     text-align: center;
     margin: 1rem;
 }
+.displayNone {
+    display: none;
+}
 .startGame {
-    display: block;
     align-items: center;
     justify-content: center;
     height: 21rem;
@@ -70,7 +72,7 @@ h2 {
     height: 10rem;
 }
 .quizArea {
-    display: none;
+
     align-items: center;
     justify-content: center;
     height: 21rem;
@@ -88,7 +90,7 @@ h2 {
     height: 10rem;
 }
 .postGame {
-    display: none;
+
     align-items: center;
     justify-content: center;
     height: 21rem;
@@ -114,7 +116,7 @@ h2 {
     
 }
 .leaderboard {
-    display: none;
+
     align-items: center;
     justify-content: center;
     height: 21rem;
