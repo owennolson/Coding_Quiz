@@ -52,26 +52,28 @@ function startGame () {
 }
 
 function showQuestion() {
+    let quizArea = document.getElementById("quizArea");
+    let postGameArea = document.getElementById("postGame");
     question.innerHTML = quizQs[questionIndex].question;
+    document.getElementById("questionArea").innerHTML = "";
     for (var i = 0; i < quizQs[questionIndex].choices.length; i++) {
         var btn = document.createElement("button");
         btn.innerHTML = quizQs[questionIndex].choices[i];
         document.getElementById("questionArea").appendChild(btn);
         btn.addEventListener("click", function() {
-            console.log("hello");
+            if(quizQs[questionIndex].choices[i] === quizQs[questionIndex].answer[i]) {
+                score++;
+                console.log("score+1");
+            } else if(quizQs[questionIndex].question[i] > quizQs[questionIndex].length) {
+                quizArea.classList.toggle("displayNone");
+                postGameArea.classList.toggle("displayNone");
+            }
             questionIndex++;
             showQuestion();
         })
     }
 }
 
-function quizInput () {
-    let quizArea = document.getElementById("quizArea");
-    let postGameArea = document.getElementById("postGame");
-    quizArea.classList.toggle("displayNone");
-    postGameArea.classList.toggle("displayNone");
-
-}
 
 function leaderboard () {
     let postGameArea = document.getElementById("postGame");
