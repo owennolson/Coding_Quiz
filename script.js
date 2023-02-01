@@ -56,7 +56,7 @@ function showQuestion() {
     for (var i = 0; i < quizQs[questionIndex].choices.length; i++) {
         var btn = document.createElement("button");
         btn.innerHTML = quizQs[questionIndex].choices[i];
-        document.getElementById("quizArea").appendChild(btn);
+        document.getElementById("questionArea").appendChild(btn);
         btn.addEventListener("click", function() {
             console.log("hello");
             questionIndex++;
