@@ -66,19 +66,18 @@ function startGame () {
 }
 
 function quizInput () {
+    let quizArea = document.getElementById("quizArea");
+    let postGameArea = document.getElementById("postGame");
     for(var i =0; i < quizQs.length; i++) {
-        question = quizQs[i].question; 
-        if(question == quizQs[i].answer){
+        userInput = quizQs[i].question; 
+        if(userInput == quizQs[i].answer){
             score++;
-        }
-        if(i >= quizQs.length) {
+        }else {
             quizArea.classList.toggle("displayNone");
             postGameArea.classList.toggle("displayNone");
         }
     }
 
-    let quizArea = document.getElementById("quizArea");
-    let postGameArea = document.getElementById("postGame");
 }
 
 function leaderboard () {
