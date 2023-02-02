@@ -97,6 +97,13 @@ function showQuestion() {
 function postGame() {
     let quizArea = document.getElementById("quizArea");
     let postGameArea = document.getElementById("postGame");
+    //let userNameEl = document.getElementById("userName");
+    localStorage.setItem("userNameEl", JSON.stringify(userNameEl));
+    var userNameEl = JSON.parse(localStorage.getItem("userName"));
+    let leaderboard = document.getElementById("highscore")
+    
+    
+    document.body.append(leaderboard);
     quizArea.classList.toggle("displayNone");
     postGameArea.classList.toggle("displayNone");
 
